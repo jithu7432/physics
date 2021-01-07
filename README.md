@@ -1,4 +1,4 @@
-# All methods in this repository are listed below:
+# Contents
 ------------------------------------------------
 ## Root finding Methods
 
@@ -6,3 +6,4 @@
 * Newton Rhapson Method
 * Fixed Point Iteration Method
 * Bisection Method
+
