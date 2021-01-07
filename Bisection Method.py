@@ -21,6 +21,5 @@ while True:
         a = x
     if f(a) <= epsilon and f(b) <= epsilon:
         break
-data = [listA, listB, listX]
 df = DataFrame({'a': listA, 'b': listB, 'x': listX, 'f(x)': listF})
 print(df)
