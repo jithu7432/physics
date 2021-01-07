@@ -1,7 +1,9 @@
 # All methods in this repository are listed below:
 ------------------------------------------------
-* Method of False Position / Secant Method of finding roots.
+## Root finding Methods
 
-* Newton Rhapson Method of finding roots.
+* Method of False Position / Secant Method
 
-* Fixed Point Iteration method of finding roots.
+* Newton Rhapson Method
+
+* Fixed Point Iteration Method
