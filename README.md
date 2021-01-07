@@ -1,4 +1,4 @@
-All methods in this repository are listed below:
+# All methods in this repository are listed below:
 ------------------------------------------------
 #. Method of False Position / Secant Method of finding roots.
 
