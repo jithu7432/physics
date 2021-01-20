@@ -23,9 +23,8 @@ if dphi(x) > 1:
 epsilon = 1e-5
 xl, phixl, fxl = ([] for _ in range(3))
 while True:
-    xl.append(x), phixl.append(phi(x))
+    xl.append(x), phixl.append(phi(x)),fxl.append(f(x))
     x = phi(x)
-    fxl.append(f(x))
     if abs(f(x)) <= epsilon:
         break
 data = DataFrame({"x": xl, "phi(x)": phixl, "f(x)": fxl})
