@@ -6,4 +6,4 @@
 * Newton Rhapson Method
 * Fixed Point Iteration Method
 * Bisection Method
-
+* Graffe's Root Squaring Method (Order == 4)
