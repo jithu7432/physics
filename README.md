@@ -1,6 +1,6 @@
 # Contents
 ------------------------------------------------
-## Root finding Methods
+## *Root finding Methods
 
 * False Position / Secant Method
 * Newton Rhapson Method
