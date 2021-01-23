@@ -15,9 +15,9 @@ epsilon = 1e-10
 h = 1e-10
 x = float(input("Enter initial guess: "))
 while True:
-    xl.append(x)
+    xl.append(x), fl.append(f(x)), dfl.append(df(x))
     x = x - f(x) / df(x)
-    xll.append(x),fl.append(f(x)),dfl.append(df(x))
+    xll.append(x)
     if abs(f(x)) <= epsilon:
         break
 data = {"X": xl, "f(x)": fl, "f'(x)": dfl, "Xn": xll}
