@@ -3,7 +3,9 @@ from pandas import DataFrame
 A = [1, -6, 11, -6]
 B = []
 Roots = []
+
 iterations = 9 # Watch out for overflow errors
+
 for n in range(iterations):
     for i in range(0, len(A)):
         if i == 0:
@@ -18,6 +20,7 @@ for n in range(iterations):
     Roots.append(roots)
     A = B
     B = []
+
 df = DataFrame(Roots)
 df.columns = ["X1", "X2 ", "X3"]
 print(df)
