@@ -1,1 +1,1 @@
-Exclusively for Physics stuffs.
+Mostly contains various computational methods to solve problems numerically.
