@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 
 # Parameters
-driver_frequency = 10 * 10e9  # GHz
-a, b = 3, 2  # cms
+driver_frequency = 3 * 10e9  # GHz
+a, b = 10, 5  # cms
 
 c = 3 * 10e8
 driver_wavelength = 100 * c / driver_frequency
@@ -42,10 +42,17 @@ for x in rms:
 
 possible_wavelengths = [100 * c / f for f in possible_frequencies]
 possible_frequencies = [f / 10e9 for f in possible_frequencies]
-guide_wavelength = [driver_wavelength / np.sqrt(1 - (driver_wavelength / x) ** 2) for x in possible_wavelengths]
+guide_wavelength = [
+    driver_wavelength / np.sqrt(1 - (driver_wavelength / x)**2)
+    for x in possible_wavelengths
+]
 
-data = {"Modes": possible_modes, 'cutoff freq': possible_frequencies, "cutoff wavelength": possible_wavelengths,
-        "Guide λ": guide_wavelength}
+data = {
+    "Modes": possible_modes,
+    'cutoff freq': possible_frequencies,
+    "cutoff wavelength": possible_wavelengths,
+    "Guide λ": guide_wavelength
+}
 df = pd.DataFrame(data)
 df.index += 1
 # printing
